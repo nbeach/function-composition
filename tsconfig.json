@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "noEmitHelpers": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "types": ["mocha"],
+    "declaration" : true,
+    "outDir": "dist"
+  },
+  "files": [
+    "./src/function-composition.ts"
+  ]
+}

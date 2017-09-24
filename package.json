@@ -1,0 +1,35 @@
+{
+  "name": "function-composition",
+  "version": "1.0.0",
+  "description": "A utility for elegant composing/chaining of function calls",
+  "main": "dist/function-composition.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nbeach/function-composition.git"
+  },
+  "author": "Nicholas Beach <nicholas.c.beach@gmail.com> (http://nicholasbeach.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nbeach/function-composition/issues"
+  },
+  "keywords": [
+    "functional",
+    "chain",
+    "compose",
+    "function"
+  ],
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "test": "mocha --compilers ts:ts-node/register --recursive",
+    "test:watch": "mocha --compilers ts:ts-node/register --recursive --watch --reporter progress"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.4",
+    "@types/mocha": "^2.2.43",
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1",
+    "rimraf": "^2.6.2",
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2"
+  }
+}
