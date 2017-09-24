@@ -4,7 +4,7 @@ var FunctionComposition = /** @class */ (function () {
     function FunctionComposition(func) {
         this.func = func;
     }
-    FunctionComposition.prototype.andThen = function (next) {
+    FunctionComposition.prototype.then = function (next) {
         var _this = this;
         return new FunctionComposition(function (value) { return next(_this.func(value)); });
     };

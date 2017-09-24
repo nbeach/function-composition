@@ -10,8 +10,8 @@ describe("FunctionComposition", () => {
         const toString = (val: number | boolean | string) => String(val);
 
         const actual = first(addFive)
-            .andThen(isTen)
-            .andThen(toString)
+            .then(isTen)
+            .then(toString)
             .apply(2);
 
         expect(actual).to.equal("false");
