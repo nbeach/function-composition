@@ -1,7 +1,7 @@
 {
   "name": "function-composition",
-  "version": "1.0.0",
-  "description": "A utility for elegant composing/chaining of function calls",
+  "version": "1.0.1",
+  "description": "A library for elegant composing/chaining of function calls",
   "main": "dist/function-composition.js",
   "repository": {
     "type": "git",

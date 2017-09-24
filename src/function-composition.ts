@@ -11,6 +11,6 @@ export class FunctionComposition<T, R> {
     }
 }
 
-export function first<T, R>(func: (value: T) => R) {
+export function first<T, R>(func: (value: T) => R): FunctionComposition<T, R> {
     return new FunctionComposition<T,R>(func);
 }
