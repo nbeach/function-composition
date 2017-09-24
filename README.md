@@ -1,7 +1,7 @@
-## FunctionComposition
+# FunctionComposition
 A library for elegant composing/chaining of function calls.
 
-Usage:
+####Usage:
 ```
 import {first} from "function-composition";
  
@@ -10,7 +10,7 @@ const isTen = (num: number) => num === 10;
 const toString = (val: number | boolean | string) => String(val);
  
 const actual = first(addFive)
-   .andThen(isTen)
-   .andThen(toString)
+   .then(isTen)
+   .then(toString)
    .apply(2);
 ```
