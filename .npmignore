@@ -1,6 +1,4 @@
 .idea/
 node_modules/
 npm-debug.log
-**/*.js
-**/*.d.ts
-**/*.js.map
+**/*.spec.ts

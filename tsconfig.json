@@ -10,10 +10,9 @@
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true,
     "types": ["mocha"],
-    "declaration" : true,
-    "outDir": "dist"
+    "declaration" : true
   },
-  "files": [
-    "./src/function-composition.ts"
+  "exclude": [
+    "**/*.spec.ts"
   ]
 }

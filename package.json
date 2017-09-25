@@ -1,8 +1,9 @@
 {
   "name": "function-composition",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A library for readable composing/chaining of function calls",
-  "main": "dist/function-composition.js",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/nbeach/function-composition.git"
@@ -19,9 +20,12 @@
     "function"
   ],
   "scripts": {
-    "build": "rimraf dist && tsc",
-    "test": "mocha --compilers ts:ts-node/register --recursive",
-    "test:watch": "mocha --compilers ts:ts-node/register --recursive --watch --reporter progress"
+    "clean": "rimraf src/**/*.js src/**/*.js.map src/**/*.d.ts index.js index.js.map index.d.ts",
+    "build": "npm run clean && tsc",
+    "release:tag": "git tag $(node -p -e \"require('./package.json').version\") && git push origin --tags",
+    "release": "npm test && npm run build && npm run release:tag && npm publish",
+    "test": "mocha --compilers ts:ts-node/register --recursive src/**/*.spec.ts",
+    "test:watch": "mocha --compilers ts:ts-node/register --recursive --watch --reporter progress src/**/*.spec.ts"
   },
   "devDependencies": {
     "@types/chai": "^4.0.4",
