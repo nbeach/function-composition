@@ -1,5 +1,4 @@
-import * as chai from 'chai';
-const expect = chai.expect;
+import {expect} from 'chai';
 import {first} from "./function-composition";
 
 describe("FunctionComposition", () => {
