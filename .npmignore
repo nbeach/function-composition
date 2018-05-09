@@ -1,6 +1,7 @@
 .idea/
 node_modules/
 npm-debug.log
-**/*.spec.ts
+**/*.spec.*
+**/*.ts
 
 tsconfig.json
