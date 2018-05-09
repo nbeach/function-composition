@@ -1,13 +1,13 @@
 {
   "name": "function-composition",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "A library for readable composing/chaining of function calls",
   "main": "index.js",
   "types": "index.d.ts",
   "files": [
     "index.d.ts",
     "index.js",
-    "index.j.map",
+    "index.js.map",
     "src/**/*.d.ts",
     "src/**/*.js",
     "src/**/*.js.map",
