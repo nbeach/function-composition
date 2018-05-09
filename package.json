@@ -4,6 +4,12 @@
   "description": "A library for readable composing/chaining of function calls",
   "main": "index.js",
   "types": "index.d.ts",
+  "files": [
+    "index.*",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/nbeach/function-composition.git"
